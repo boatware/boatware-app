@@ -1,0 +1,19 @@
+uuid: 175efc6b-2aec-46d1-ab01-cd2a3b31da32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_post_office_box
+    - node.type.contact
+id: node.contact.field_post_office_box
+field_name: field_post_office_box
+entity_type: node
+bundle: contact
+label: 'Post office box'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

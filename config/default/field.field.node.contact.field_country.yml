@@ -1,0 +1,19 @@
+uuid: b3988aa4-5e77-4cb2-82b5-89b40b364941
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_country
+    - node.type.contact
+id: node.contact.field_country
+field_name: field_country
+entity_type: node
+bundle: contact
+label: Country
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

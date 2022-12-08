@@ -1,0 +1,24 @@
+uuid: fc814924-b856-413a-8f26-2b842dfc33d6
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.date.field_date
+    - field.field.node.date.field_tags
+    - node.type.date
+  module:
+    - user
+id: node.date.teaser
+targetEntityType: node
+bundle: date
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_date: true
+  field_tags: true

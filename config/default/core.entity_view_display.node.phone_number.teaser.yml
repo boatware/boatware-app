@@ -1,0 +1,26 @@
+uuid: 4d4656e8-ce97-499c-a2c6-581a342a3c54
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.phone_number.field_number
+    - field.field.node.phone_number.field_preferred
+    - field.field.node.phone_number.field_tags
+    - node.type.phone_number
+  module:
+    - user
+id: node.phone_number.teaser
+targetEntityType: node
+bundle: phone_number
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_number: true
+  field_preferred: true
+  field_tags: true

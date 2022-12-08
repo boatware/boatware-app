@@ -1,0 +1,47 @@
+uuid: 228e07c9-6383-4036-8782-65a24869f481
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.phone_number.field_number
+    - field.field.node.phone_number.field_preferred
+    - field.field.node.phone_number.field_tags
+    - node.type.phone_number
+  module:
+    - user
+id: node.phone_number.default
+targetEntityType: node
+bundle: phone_number
+mode: default
+content:
+  field_number:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_preferred:
+    type: boolean
+    label: above
+    settings:
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 103
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

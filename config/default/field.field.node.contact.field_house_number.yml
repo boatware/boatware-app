@@ -1,0 +1,19 @@
+uuid: c58c249b-8b24-43cf-a95e-2ee3e607e88d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_house_number
+    - node.type.contact
+id: node.contact.field_house_number
+field_name: field_house_number
+entity_type: node
+bundle: contact
+label: 'House Number'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

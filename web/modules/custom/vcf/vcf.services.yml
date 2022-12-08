@@ -1,0 +1,5 @@
+services:
+  vcf.vcf:
+    class: Drupal\vcf\Service\Vcf
+  vcf.import:
+    class: Drupal\vcf\Service\Import

@@ -1,0 +1,19 @@
+uuid: f59b23c6-7482-4769-8fc8-5adb1a5ca43d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_region
+    - node.type.contact
+id: node.contact.field_region
+field_name: field_region
+entity_type: node
+bundle: contact
+label: Region
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

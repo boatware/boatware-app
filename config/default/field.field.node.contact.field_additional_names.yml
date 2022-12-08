@@ -1,0 +1,19 @@
+uuid: 3813b252-dc76-4028-979c-5ad5e8c736f4
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_names
+    - node.type.contact
+id: node.contact.field_additional_names
+field_name: field_additional_names
+entity_type: node
+bundle: contact
+label: 'Additional names'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

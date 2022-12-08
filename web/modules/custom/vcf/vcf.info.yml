@@ -1,0 +1,5 @@
+name: "VCF"
+type: module
+description: "VCF module"
+core_version_requirement: ^9 || ^10
+package: "boatware"

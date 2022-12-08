@@ -1,0 +1,23 @@
+uuid: 5c90dac2-1d36-42ca-921b-5dce74d8de7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_preferred
+    - node.type.email
+id: node.email.field_preferred
+field_name: field_preferred
+entity_type: node
+bundle: email
+label: Preferred
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

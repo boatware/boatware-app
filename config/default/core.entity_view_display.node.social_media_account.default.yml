@@ -1,0 +1,42 @@
+uuid: 72abd0d7-a6fe-4390-bf98-3689c1633801
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.social_media_account.field_link
+    - field.field.node.social_media_account.field_tags
+    - node.type.social_media_account
+  module:
+    - link
+    - user
+id: node.social_media_account.default
+targetEntityType: node
+bundle: social_media_account
+mode: default
+content:
+  field_link:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  field_tags:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden: {  }

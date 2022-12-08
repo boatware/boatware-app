@@ -1,0 +1,33 @@
+name: boatware-app
+recipe: drupal9
+config:
+  webroot: ./web
+services:
+  appserver:
+    type: php:8.1
+    via: apache:2.4
+    composer_version: 2-latest
+    xdebug: true
+    overrides:
+      environment:
+        PHP_IDE_CONFIG: "serverName=appserver"
+  mailhog:
+    type: mailhog
+    portforward: false
+    hogfrom:
+      - appserver
+  phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - database
+  # Test database to run unit tests local
+  testdb:
+    type: mysql
+    creds:
+      user: drupaltest
+      password: drupaltest
+      database: drupaltest
+  testdb_phpmyadmin:
+    type: phpmyadmin
+    hosts:
+      - testdb

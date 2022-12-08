@@ -1,0 +1,19 @@
+uuid: fa406a0d-a297-4887-ba65-f5a008d81375
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_street
+    - node.type.contact
+id: node.contact.field_street
+field_name: field_street
+entity_type: node
+bundle: contact
+label: Street
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

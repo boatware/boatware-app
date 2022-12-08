@@ -1,0 +1,29 @@
+uuid: 27b93b34-61db-4d35-9356-b7341c17b1e8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_social_media
+    - node.type.contact
+    - node.type.social_media_account
+id: node.contact.field_social_media
+field_name: field_social_media
+entity_type: node
+bundle: contact
+label: 'Social Media'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      social_media_account: social_media_account
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

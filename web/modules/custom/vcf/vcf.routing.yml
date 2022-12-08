@@ -1,0 +1,15 @@
+vcf.import:
+  path: '/vcf/import'
+  defaults:
+    _controller: Drupal\vcf\Controller\ImportController::test
+    _title: 'Import VCF'
+  requirements:
+    _permission: 'access content'
+
+vcf.delete:
+  path: '/vcf/delete'
+  defaults:
+    _controller: Drupal\vcf\Controller\ImportController::deleteAllContent
+    _title: 'Delete All'
+  requirements:
+    _permission: 'access content'
