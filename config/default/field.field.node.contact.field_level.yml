@@ -1,0 +1,29 @@
+uuid: 1c6f20de-2274-4de4-a289-f660ca6d45e1
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_level
+    - node.type.contact
+    - taxonomy.vocabulary.ohano_level
+id: node.contact.field_level
+field_name: field_level
+entity_type: node
+bundle: contact
+label: Level
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ohano_level: ohano_level
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,8 @@
+uuid: 2f35731e-857e-4fe4-93eb-cb007dec390f
+langcode: en
+status: true
+dependencies: {  }
+name: 'ohano: Department'
+vid: ohano_department
+description: ''
+weight: 0

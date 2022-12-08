@@ -8,21 +8,26 @@ dependencies:
     - field.field.node.contact.field_apartment
     - field.field.node.contact.field_birthday
     - field.field.node.contact.field_country
+    - field.field.node.contact.field_department
     - field.field.node.contact.field_emails
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_floor
     - field.field.node.contact.field_gender
+    - field.field.node.contact.field_hire_list_position
     - field.field.node.contact.field_house_number
     - field.field.node.contact.field_images
     - field.field.node.contact.field_last_name
+    - field.field.node.contact.field_level
     - field.field.node.contact.field_locality
     - field.field.node.contact.field_name_prefix
     - field.field.node.contact.field_name_suffix
+    - field.field.node.contact.field_on_hire_list
     - field.field.node.contact.field_phone
     - field.field.node.contact.field_post_office_box
     - field.field.node.contact.field_postal_code
     - field.field.node.contact.field_pronouns
     - field.field.node.contact.field_region
+    - field.field.node.contact.field_role
     - field.field.node.contact.field_social_media
     - field.field.node.contact.field_special_dates
     - field.field.node.contact.field_street
@@ -44,21 +49,26 @@ hidden:
   field_apartment: true
   field_birthday: true
   field_country: true
+  field_department: true
   field_emails: true
   field_first_name: true
   field_floor: true
   field_gender: true
+  field_hire_list_position: true
   field_house_number: true
   field_images: true
   field_last_name: true
+  field_level: true
   field_locality: true
   field_name_prefix: true
   field_name_suffix: true
+  field_on_hire_list: true
   field_phone: true
   field_post_office_box: true
   field_postal_code: true
   field_pronouns: true
   field_region: true
+  field_role: true
   field_social_media: true
   field_special_dates: true
   field_street: true

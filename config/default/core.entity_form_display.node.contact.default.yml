@@ -7,21 +7,26 @@ dependencies:
     - field.field.node.contact.field_apartment
     - field.field.node.contact.field_birthday
     - field.field.node.contact.field_country
+    - field.field.node.contact.field_department
     - field.field.node.contact.field_emails
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_floor
     - field.field.node.contact.field_gender
+    - field.field.node.contact.field_hire_list_position
     - field.field.node.contact.field_house_number
     - field.field.node.contact.field_images
     - field.field.node.contact.field_last_name
+    - field.field.node.contact.field_level
     - field.field.node.contact.field_locality
     - field.field.node.contact.field_name_prefix
     - field.field.node.contact.field_name_suffix
+    - field.field.node.contact.field_on_hire_list
     - field.field.node.contact.field_phone
     - field.field.node.contact.field_post_office_box
     - field.field.node.contact.field_postal_code
     - field.field.node.contact.field_pronouns
     - field.field.node.contact.field_region
+    - field.field.node.contact.field_role
     - field.field.node.contact.field_social_media
     - field.field.node.contact.field_special_dates
     - field.field.node.contact.field_street
@@ -32,6 +37,7 @@ dependencies:
     - inline_entity_form
     - media_library
     - path
+    - telephone
 third_party_settings:
   field_group:
     group_name:
@@ -74,6 +80,25 @@ third_party_settings:
         open: false
         description: ''
         required_fields: true
+    group_ohano:
+      children:
+        - field_level
+        - field_role
+        - field_department
+        - field_on_hire_list
+        - field_hire_list_position
+      label: ohano
+      region: content
+      parent_name: ''
+      weight: 19
+      format_type: details
+      format_settings:
+        classes: ''
+        show_empty_fields: false
+        id: ''
+        open: false
+        description: ''
+        required_fields: true
 id: node.contact.default
 targetEntityType: node
 bundle: contact
@@ -95,7 +120,7 @@ content:
     third_party_settings: {  }
   field_apartment:
     type: string_textfield
-    weight: 30
+    weight: 31
     region: content
     settings:
       size: 60
@@ -103,34 +128,31 @@ content:
     third_party_settings: {  }
   field_birthday:
     type: datetime_default
-    weight: 15
+    weight: 13
     region: content
     settings: {  }
     third_party_settings: {  }
   field_country:
     type: string_textfield
-    weight: 34
+    weight: 35
     region: content
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_department:
+    type: options_select
+    weight: 22
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_emails:
-    type: inline_entity_form_complex
-    weight: 13
+    type: email_default
+    weight: 14
     region: content
     settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: true
-      collapsed: true
-      revision: false
+      placeholder: ''
+      size: 60
     third_party_settings: {  }
   field_first_name:
     type: string_textfield
@@ -142,7 +164,7 @@ content:
     third_party_settings: {  }
   field_floor:
     type: string_textfield
-    weight: 28
+    weight: 29
     region: content
     settings:
       size: 60
@@ -153,6 +175,13 @@ content:
     weight: 12
     region: content
     settings: {  }
+    third_party_settings: {  }
+  field_hire_list_position:
+    type: number
+    weight: 24
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_house_number:
     type: string_textfield
@@ -177,9 +206,15 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+  field_level:
+    type: options_select
+    weight: 20
+    region: content
+    settings: {  }
+    third_party_settings: {  }
   field_locality:
     type: string_textfield
-    weight: 32
+    weight: 33
     region: content
     settings:
       size: 60
@@ -201,26 +236,23 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
-  field_phone:
-    type: inline_entity_form_complex
-    weight: 14
+  field_on_hire_list:
+    type: boolean_checkbox
+    weight: 23
     region: content
     settings:
-      form_mode: default
-      override_labels: false
-      label_singular: ''
-      label_plural: ''
-      allow_new: true
-      allow_existing: true
-      match_operator: CONTAINS
-      allow_duplicate: false
-      collapsible: true
-      collapsed: true
-      revision: false
+      display_label: true
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 15
+    region: content
+    settings:
+      placeholder: ''
     third_party_settings: {  }
   field_post_office_box:
     type: string_textfield
-    weight: 33
+    weight: 34
     region: content
     settings:
       size: 60
@@ -228,7 +260,7 @@ content:
     third_party_settings: {  }
   field_postal_code:
     type: string_textfield
-    weight: 31
+    weight: 32
     region: content
     settings:
       size: 60
@@ -244,11 +276,17 @@ content:
     third_party_settings: {  }
   field_region:
     type: string_textfield
-    weight: 35
+    weight: 36
     region: content
     settings:
       size: 60
       placeholder: ''
+    third_party_settings: {  }
+  field_role:
+    type: options_select
+    weight: 21
+    region: content
+    settings: {  }
     third_party_settings: {  }
   field_social_media:
     type: inline_entity_form_complex

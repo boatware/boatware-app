@@ -1,16 +1,16 @@
-uuid: 9a5e6d27-dc93-481b-b07d-d7d133423199
+uuid: d3211d68-37f9-4bba-87db-84b2a357cc5f
 langcode: en
 status: true
 dependencies:
   module:
     - node
+    - telephone
 id: node.field_phone
 field_name: field_phone
 entity_type: node
-type: entity_reference
-settings:
-  target_type: node
-module: core
+type: telephone
+settings: {  }
+module: telephone
 locked: false
 cardinality: -1
 translatable: true

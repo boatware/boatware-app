@@ -1,16 +1,17 @@
-uuid: a76f7747-5d41-4970-b389-db85aca86335
+uuid: 7473b9d5-c9aa-4b4c-895a-eea462576e80
 langcode: en
 status: true
 dependencies:
   module:
     - node
-    - telephone
-id: node.field_number
-field_name: field_number
+    - taxonomy
+id: node.field_role
+field_name: field_role
 entity_type: node
-type: telephone
-settings: {  }
-module: telephone
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
 locked: false
 cardinality: 1
 translatable: true

@@ -1,13 +1,13 @@
-uuid: fe67ef50-f85d-4968-9084-bdcd17a2e086
+uuid: 9fb8e19a-dc9a-42b1-82a3-d0292d18dfb8
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_address
-field_name: field_address
+id: node.field_on_hire_list
+field_name: field_on_hire_list
 entity_type: node
-type: email
+type: boolean
 settings: {  }
 module: core
 locked: false

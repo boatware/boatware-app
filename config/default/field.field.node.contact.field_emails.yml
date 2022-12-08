@@ -1,11 +1,10 @@
-uuid: 986839d0-e1a2-4937-872c-ddda2f1f55d7
+uuid: e19def14-70f2-4819-be82-410d29495396
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_emails
     - node.type.contact
-    - node.type.email
 id: node.contact.field_emails
 field_name: field_emails
 entity_type: node
@@ -16,14 +15,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:node'
-  handler_settings:
-    target_bundles:
-      email: email
-    sort:
-      field: _none
-      direction: ASC
-    auto_create: true
-    auto_create_bundle: ''
-field_type: entity_reference
+settings: {  }
+field_type: email

@@ -1,11 +1,12 @@
-uuid: ccdca942-0568-445a-b717-81c9d9882079
+uuid: c6a458da-fb55-47bb-ae93-ea34713af7cc
 langcode: en
 status: true
 dependencies:
   config:
     - field.storage.node.field_phone
     - node.type.contact
-    - node.type.phone_number
+  module:
+    - telephone
 id: node.contact.field_phone
 field_name: field_phone
 entity_type: node
@@ -16,14 +17,5 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings:
-  handler: 'default:node'
-  handler_settings:
-    target_bundles:
-      phone_number: phone_number
-    sort:
-      field: _none
-      direction: ASC
-    auto_create: true
-    auto_create_bundle: ''
-field_type: entity_reference
+settings: {  }
+field_type: telephone

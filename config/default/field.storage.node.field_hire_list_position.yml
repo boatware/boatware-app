@@ -1,17 +1,19 @@
-uuid: bd408b1b-7213-4323-8614-7b364f03e22a
+uuid: 5b62da95-82f5-4129-9f72-7d33e40618d4
 langcode: en
 status: true
 dependencies:
   module:
     - node
-id: node.field_emails
-field_name: field_emails
+id: node.field_hire_list_position
+field_name: field_hire_list_position
 entity_type: node
-type: email
-settings: {  }
+type: integer
+settings:
+  unsigned: false
+  size: normal
 module: core
 locked: false
-cardinality: -1
+cardinality: 1
 translatable: true
 indexes: {  }
 persist_with_no_fields: false

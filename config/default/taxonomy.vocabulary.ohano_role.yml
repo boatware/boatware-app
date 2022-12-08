@@ -1,0 +1,8 @@
+uuid: 0ed93751-cc04-4f13-8812-aefd207a9600
+langcode: en
+status: true
+dependencies: {  }
+name: 'ohano: Role'
+vid: ohano_role
+description: ''
+weight: 0

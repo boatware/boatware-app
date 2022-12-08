@@ -1,15 +1,15 @@
-uuid: 5c90dac2-1d36-42ca-921b-5dce74d8de7c
+uuid: 7b379b92-716a-4ab0-bc18-0ce49cbc7b8c
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_preferred
-    - node.type.email
-id: node.email.field_preferred
-field_name: field_preferred
+    - field.storage.node.field_on_hire_list
+    - node.type.contact
+id: node.contact.field_on_hire_list
+field_name: field_on_hire_list
 entity_type: node
-bundle: email
-label: Preferred
+bundle: contact
+label: 'On Hire List'
 description: ''
 required: false
 translatable: false

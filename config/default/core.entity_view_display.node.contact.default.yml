@@ -7,21 +7,26 @@ dependencies:
     - field.field.node.contact.field_apartment
     - field.field.node.contact.field_birthday
     - field.field.node.contact.field_country
+    - field.field.node.contact.field_department
     - field.field.node.contact.field_emails
     - field.field.node.contact.field_first_name
     - field.field.node.contact.field_floor
     - field.field.node.contact.field_gender
+    - field.field.node.contact.field_hire_list_position
     - field.field.node.contact.field_house_number
     - field.field.node.contact.field_images
     - field.field.node.contact.field_last_name
+    - field.field.node.contact.field_level
     - field.field.node.contact.field_locality
     - field.field.node.contact.field_name_prefix
     - field.field.node.contact.field_name_suffix
+    - field.field.node.contact.field_on_hire_list
     - field.field.node.contact.field_phone
     - field.field.node.contact.field_post_office_box
     - field.field.node.contact.field_postal_code
     - field.field.node.contact.field_pronouns
     - field.field.node.contact.field_region
+    - field.field.node.contact.field_role
     - field.field.node.contact.field_social_media
     - field.field.node.contact.field_special_dates
     - field.field.node.contact.field_street
@@ -68,13 +73,20 @@ content:
     third_party_settings: {  }
     weight: 113
     region: content
-  field_emails:
+  field_department:
     type: entity_reference_label
     label: above
     settings:
       link: true
     third_party_settings: {  }
-    weight: 108
+    weight: 124
+    region: content
+  field_emails:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 128
     region: content
   field_first_name:
     type: string
@@ -98,6 +110,15 @@ content:
     settings: {  }
     third_party_settings: {  }
     weight: 107
+    region: content
+  field_hire_list_position:
+    type: number_integer
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    weight: 127
     region: content
   field_house_number:
     type: string
@@ -124,6 +145,14 @@ content:
     third_party_settings: {  }
     weight: 101
     region: content
+  field_level:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 123
+    region: content
   field_locality:
     type: string
     label: above
@@ -148,13 +177,22 @@ content:
     third_party_settings: {  }
     weight: 105
     region: content
-  field_phone:
-    type: entity_reference_label
+  field_on_hire_list:
+    type: boolean
     label: above
     settings:
-      link: true
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    weight: 109
+    weight: 126
+    region: content
+  field_phone:
+    type: basic_string
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 129
     region: content
   field_post_office_box:
     type: string
@@ -187,6 +225,14 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     weight: 115
+    region: content
+  field_role:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 125
     region: content
   field_social_media:
     type: entity_reference_label
